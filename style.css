@@ -1,0 +1,75 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0a0a0a;
+  color: #00ff90;
+  margin: 2em;
+}
+
+header h1 {
+  text-align: center;
+  color: #00ff90;
+}
+
+#clock-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 2em;
+}
+
+#digital-clock {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff90;
+  text-shadow: 0 0 10px #00ff90;
+}
+
+form {
+  background-color: #121212;
+  padding: 1em;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 1em auto;
+  color: #00ff90;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #00ff90;
+}
+
+button {
+  background-color: #00ff90;
+  color: #000;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  border: 1px solid #00ff90;
+  padding: 0.5em;
+  text-align: center;
+}
+
+th {
+  background-color: #1e1e1e;
+}
+
+.actions button {
+  background-color: #00ff90;
+  color: #000;
+  margin: 0 0.25em;
+  padding: 0.25em 0.5em;
+  border: none;
+  border-radius: 5px;
+}

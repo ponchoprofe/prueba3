@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alarma Digital Tech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="clock-container">
+    <div id="digital-clock">00:00:00</div>
+  </div>
+
+  <header>
+    <h1>⏰ Registro de Alarmas Digital Tech</h1>
+  </header>
+
+  <main>
+    <form id="alarm-form">
+      <label>Nombre de la Alarma:</label><br />
+      <input type="text" name="nombre" required /><br />
+
+      <label>Día de Activación:</label><br />
+      <select name="dia" required>
+        <option value="">Seleccionar día</option>
+        <option value="Todos">Todos los días</option>
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miércoles">Miércoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
+      </select><br />
+
+      <label>Fecha:</label><br />
+      <input type="date" name="fecha" required /><br />
+
+      <label>Hora:</label><br />
+      <input type="time" name="hora" required /><br />
+
+      <label>Comentario:</label><br />
+      <textarea name="comentario" rows="3" required></textarea><br /><br />
+
+      <button type="submit">Registrar Alarma</button>
+    </form>
+
+    <h2>📋 Alarmas Registradas</h2>
+    <table id="alarms-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Día</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Comentario</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
